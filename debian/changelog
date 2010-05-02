@@ -1,0 +1,5 @@
+python-django-imagekit (0.3.3-0lenny1) lenny; urgency=low
+
+  * Initial release.
+
+ -- Stefan Jenkner <stefan@jenkner.org>  Sun, 02 May 2010 22:18:13 +0200
