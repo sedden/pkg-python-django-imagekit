@@ -1,0 +1,3 @@
+version=3
+http://bitbucket.org/jdriscoll/django-imagekit/downloads/ \
+/jdriscoll/django-imagekit/get/(\d.*).tar.gz

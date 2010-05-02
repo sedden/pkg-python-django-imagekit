@@ -1,0 +1,16 @@
+Index: pkg-python-django-imagekit.git/setup.py
+===================================================================
+--- pkg-python-django-imagekit.git.orig/setup.py	2010-05-02 17:47:44.000000000 +0200
++++ pkg-python-django-imagekit.git/setup.py	2010-05-02 17:48:56.000000000 +0200
+@@ -20,9 +20,9 @@
+     ],
+     # Make setuptools include all data files under version control,
+     # svn and CVS by default
+-    include_package_data=True,
++    include_package_data=False,
+     zip_safe=False,
+     # Tells setuptools to download setuptools_git before running setup.py so
+     # it can find the data files under Hg version control.
+-    setup_requires=['setuptools_hg'],
++    setup_requires=['setuptools'],
+ )

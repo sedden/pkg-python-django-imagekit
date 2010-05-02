@@ -1,0 +1,21 @@
+#!/usr/bin/make -f
+
+include /usr/share/quilt/quilt.make
+
+%:
+	dh $@
+
+build: $(QUILT_STAMPFN)
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -rf build/
+	rm -rf setuptools_hg-0.2-py2.5.egg
+	rm -rf setuptools_hg-0.2-py2.6.egg
+
+clean:
+	dh $@ --before auto_clean
+	dh $@ --after auto_clean
+	${MAKE} -f debian/rules unpatch
+
+

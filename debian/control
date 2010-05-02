@@ -1,0 +1,20 @@
+Source: python-django-imagekit
+Section: python
+Priority: optional
+Maintainer: Stefan Jenkner <stefan@jenkner.org>
+Standards-Version: 3.8.1
+Build-Depends: debhelper (>= 7), python-dev, quilt
+Build-Depends-Indep: python-support, python-docutils, python-setuptools
+XS-Python-Version: >= 2.5
+XB-Python-Version: ${python:Versions}
+Homepage: http://bitbucket.org/jdriscoll/django-imagekit/wiki/Home
+
+Package: python-django-imagekit
+Architecture: all
+Depends: ${python:Depends}, ${misc:Depends}, python-django (>= 1.0), python-imaging
+Description: Automates image processing for Django models
+ Automates image processing for Django models. Resize, process and
+ cache multiple versions of your image files.
+ .
+ Access newly created files with a standard API. Supports alternate
+ storage schemes such as Amazon S3. 
